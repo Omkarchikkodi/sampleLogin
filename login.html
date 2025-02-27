@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter Email">
+    
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter Password">
+            <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+        </div>
+    
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    
+    <div id="toast" class="toast"></div>
+
+    <div id="loader" class="loader"></div>
+
+    <script type="module" src="auth.js"></script>
+
+
+</body>
+</html>

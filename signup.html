@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+        </div>
+
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+
+        <div class="password-hint">
+            <p>Password must include:</p>
+            <ul>
+                <li>✅ At least <strong>8 characters</strong></li>
+                <li>✅ At least <strong>one uppercase letter (A-Z)</strong></li>
+                <li>✅ At least <strong>one lowercase letter (a-z)</strong></li>
+                <li>✅ At least <strong>one number (0-9)</strong></li>
+                <li>✅ At least <strong>one special character (@, $, !, %, etc.)</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Errors -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Loader (if needed) -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Attach JavaScript -->
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
