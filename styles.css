@@ -523,18 +523,18 @@ body {
 }
 /* Bottom Navigation */
 .bottom-nav {
-    position: fixed;  /* Fixes it at the bottom */
+    position: fixed;
     bottom: 0;
-    left: 30%;
-    transform: translateX(-50%);
-    width: 60%;  /* Ensures it stays centered */
-    max-width: 600px;  /* Prevents it from stretching too much on large screens */
-    background: rgba(0, 0, 0, 0.9); /* Darker background for visibility */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it exactly */
+    width: 70%; /* Adjust width as needed */
+    max-width: 600px; /* Prevents it from stretching too much */
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
     padding: 12px 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 12px 12px 0 0; /* Rounded top corners for better design */
+    border-radius: 12px 12px 0 0; /* Rounded top corners */
     z-index: 1000;
 }
 
