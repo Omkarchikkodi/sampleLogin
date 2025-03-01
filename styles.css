@@ -578,7 +578,6 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .bottom-nav {
-        width: 90%;  /* Adjusts width on smaller screens */
         max-width: 100%;
     }
 }
